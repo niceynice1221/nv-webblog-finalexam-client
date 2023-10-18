@@ -3,10 +3,12 @@
     <h1>Get All Users</h1>
     <div>จํานวนผู้ใช้งาน {{ users.length }}</div>
     <div v-for="user in users" v-bind:key="user.id">
-      <div>id: {{ user.id }}</div>
-      <div>ชืEอ-นามสกุล: {{ user.name }} - {{ user.lastname }}</div>
-      <div>email: {{ user.email }}</div>
-      <div>password: {{ user.password }}</div>
+      <div>title: {{ user.title }}</div>
+      <div>author: {{ user.author }} </div>
+      <div>total_page: {{ user.email }}</div>
+      <div>publisher: {{ user.password }}</div>
+      <div>category: {{ user.password }}</div>
+      <div>price: {{ user.password }}</div>
       <p>
         <button v-on:click="navigateTo('/user/' + user.id)">
           ดูข้อมูลผู้ใช้
